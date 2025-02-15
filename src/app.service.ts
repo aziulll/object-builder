@@ -7,20 +7,20 @@ export class AppService {
   private composedInstance: any;
 
   constructor(private readonly builder: ObjectBuilder) {
-    this.builder.register('infoByPerson', ObjectComponent);
+    this.builder.register('person', ObjectComponent);
 
     this.composedInstance = this.builder.build();
   }
 
   execute() {
-    this.composedInstance.infoByPerson.set('name', 'Luíza');
-    this.composedInstance.infoByPerson.set('age', 21);
-    this.composedInstance.infoByPerson.set('framework', 'NestJS');
+    this.composedInstance.person.set('infoAboutPerson', {});
+    this.composedInstance.person.get('infoAboutPerson').set('name', 'Luíza');
+    this.composedInstance.person.get('infoAboutPerson').set('age', 21);
 
     this.buildJson();
   }
 
   buildJson() {
-    console.log(this.composedInstance.infoByPerson.getJson());
+    console.log(this.composedInstance.person.getJson());
   }
 }
