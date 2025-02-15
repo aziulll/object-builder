@@ -6,9 +6,7 @@ Construção de objetos de forma dinâmica usando o padrão **Composition** no N
 - ✅ Transformação dos objetos em JSON.  
 
 ---
-allowing nested object:
 ![image](https://github.com/user-attachments/assets/5dd18fa4-54cc-4c62-8364-368b0165caf2)
-
 ---
 ## 📦 Instalação  
 
