@@ -5,7 +5,7 @@ export class ObjectComponent {
     this.object.set(key, value);
   }
 
-  get(key: string) {
-    return this.object.get(key);
+  getJson(): string {
+    return JSON.stringify(Object.fromEntries(this.object), null, 2);
   }
 }
